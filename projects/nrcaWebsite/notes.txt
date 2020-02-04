@@ -1,0 +1,13 @@
+LOGIN PAGE
+
+-The students details that we should use include => 
+-Admin details to include => 
+
+
+<?php
+ 
+
+//connect to the database
+include "connectdb.php";
+
+?>
