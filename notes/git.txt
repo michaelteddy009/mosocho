@@ -1,0 +1,10 @@
+		GIT USAGE NOTES
+
+=>To check if git is already installed we type "git version"
+=>Next step is to configure your git credentials
+	->git config --global user.name 'name'
+	->git config --global user.email 'email'
+	->git config --global --list         #this list all the settings on git
+=>Now it's time to initiate git on a directory we would like to work on 
+	-> git init
+=>
