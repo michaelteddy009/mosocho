@@ -1,0 +1,11 @@
+=> Unsupervised machine learning is the algorithm presented with inputs but not outputs. The algorithm learns structure from the inputs
+	i)Clustering – Algorithms identify groups based on similarities and 
+	differences in input values. Example algo are k-mean and 	hierachical.
+	ii)Association mining – Algo identifies sets of items that 	frequently occur together in datasets.
+	iii)Anomaly Detection – Algo identifies unusual cases based on 	deviation from normal input patterns.
+=>K-mean makes sure there are centroids which dictate the cluster a data point belongs.
+=> Hierarchical clustering generally falls into two categories.
+	-Agglomerative (bottom up )
+	-Divisive (top down meaning one cluster then divided)
+=>Distance between two clusters can be computed in several ways. Examples include single, average, complete, 
+

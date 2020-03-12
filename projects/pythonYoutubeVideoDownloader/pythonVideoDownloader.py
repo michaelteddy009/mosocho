@@ -12,6 +12,7 @@ elif makeDirectory == 'y':
 	down = input('\nName folder for downloads : ')
 	path = os.path.join(os.getcwd(), down)
 	if os.path.isdir(path):
+		os.chdir(path)
 		print('Path folder already exits\n')
 		print('Downloading to {}\n'.format(path))
 	else:
