@@ -14,7 +14,7 @@
 =>we can switch branches in git and this is how if in another branch we would branch to the master
 	->git checkout /<name-of-branch>
 =>Add a remote repository
-	->git remote add <source-name> <repository-path>
+	->git remote add <source-name (remote name)> <repository-path>
 =>To create a branch
 	->git checkout -b <name-of-branch>
 =>To view the branches 
@@ -29,6 +29,7 @@
 =>To merge a branch with master branch
 	->git checkout <name-of-branch>
 	->git merge master
+
 
 
 
