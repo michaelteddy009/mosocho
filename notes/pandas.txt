@@ -1,0 +1,4 @@
+	MANIPULATING DATAFRAMES
+=> df.iterrows() gives two values which can be used to access the rows in an iterating order.
+=> df.itertuples() gives a tuple with each detail of the row.
+=> 

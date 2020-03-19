@@ -3,7 +3,7 @@ import youtube_dl
 import os
 
 ydl_opts = {}
-os.chdir('F:/Downloads')
+os.chdir('C:/Downloads')
 
 makeDirectory = input("\nCreate new directory for your downloads or use an existing one [y/n] :")
 if makeDirectory == 'n':
