@@ -1,7 +1,7 @@
 {% extends 'layoutGetIn.html' %}
 {% block content %}
 <div id="loginform" style="width:65%;margin:auto;border-top:outset 4px lightgrey;border-right:inset 4px lightgrey;padding:;margin-top:45px;border-left:outset 4px lightgrey;border-bottom: inset 4px lightgrey;border-radius: 10px;">
-	<form action='' method="post">
+	<form action='' method="POST">
 			<div style="font-size: 30px;border:none; width:90%;margin:auto;">
 				<b >Join Today</b>
 				<hr>
@@ -29,7 +29,7 @@
 			</div>
 
 			<div id='loginfield' style="width:90%;margin:auto;width:90%;padding-top: 20px;padding-bottom:20px;">
-				<input  type="submit" value="Sign Up" style="background-color: black; color:white; width:20%; height: 32px; font-family:aerial;"> Alredy have an account<a href="" style="padding-left: 5px;">Log In</a>
+				<input  type="submit" value="Sign Up" style="background-color: black; color:white; width:20%; height: 32px; font-family:aerial;"> Alredy have an account<a href="{{ url_for('login')}}" style="padding-left: 5px;">Log In</a>
 			</div>
 	
 	</form>

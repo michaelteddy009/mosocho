@@ -8,8 +8,8 @@ plt.style.use('dark_background')
 
 x_val = []
 y_val = []
-
 index = count()
+
 
 def animate(i):
     x_val.append(next(index))
