@@ -7,6 +7,7 @@
 	{% else %}
 		<title> nrcf </title>
 	{% endif %}
+
 </head>
 <body>
 	<!--header which appers in every page and is designed to change once logged in -->
@@ -17,9 +18,6 @@
 	 		<section style="width:30%;height:50px;padding-top:15px;padding-bottom:15px;float:left;">
 	 			<div style="width:30%;float: left;padding-top:27px;font-size: 20px;">
 	 				<a style="color:white;" href="{{ url_for('home')}}">Home</a>
-	 			</div>
-	 			<div style="width:30%;float: left;padding-top:27px;padding-left: 0px;font-size: 20px;">
-	 				<a style="color:white;" href="{{ url_for('about')}}">About</a>
 	 			</div>
 	 		</section>
 	 		<section style="width:40%;height:50px;padding-top:15px;padding-bottom:15px;float:left;">
@@ -35,18 +33,31 @@
 	 <!--the content section to be used-->
 	 <section style="padding:0px">
 	 	<!-- left-side spacing before page content, can be used for advertising -->
-	 	<div style="width:17%;border-right:solid 3px red;float:left;">
+	 	<div style="width:17%;float:left;">
 	 		<p></p>
 	 	</div>
 
 	 	<!-- centre which is the content section -->
 	 	<div style="width:65%;float:left;">
-	 		{% block content %}{% endblock %}
+
+	 	<!-- code block to display any flash messages -->
+	 	{% with messages = get_flashed_messages(with_categories=true) %}
+			{% if messages %}
+				{% for category, message in messages %}
+					<div style="background-color: grey">
+						{{ message }}
+					</div>
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+
+		<!--Then the block content now start after a one time message is flashed-->
+		{% block content %}{% endblock %}
 	 	</div>
 
 	 	<!-- right hand side which is left for free and can be used for adverting -->
-	 	<div style="width:%;border-left:solid 3px black;float:left;">
-	 		<p>mike</p>
+	 	<div style="width:17%;float:left;">
+	 		<p></p>
 	 	</div>
 	 </section>
 </body>
