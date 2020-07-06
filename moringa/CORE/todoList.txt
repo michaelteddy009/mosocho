@@ -1,0 +1,2 @@
+-review on groupby and how to use lambda efficiently.
+- Cynthia NRCF 0714 868707
