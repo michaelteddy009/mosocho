@@ -1,2 +1,0 @@
-=For encryption run pip install flask_bcrypt
-=For login session handling use flask-login

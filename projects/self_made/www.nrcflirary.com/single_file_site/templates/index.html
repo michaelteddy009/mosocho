@@ -1,0 +1,41 @@
+{% extends 'layoutGetIn.html' %}
+{% block content %}
+
+
+ 	<!-- code block to display any flash messages -->
+ 	{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+			{% for category, message in messages %}
+				<div style="background-color: lightgrey">
+					{{ message }}
+				</div>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<!--Then the block content now start after a one time message is flashed-->
+	<!--this is the search bar form-->
+	<div style="padding:0px;width:75%;margin:auto;height:50px;margin-top:20px;margin-bottom: 0px;">
+			<div style="float:left;width:%;margin-left: px">
+				<p style="padding:0px;margin:0px;height:25px;font-size: 30px;"><b>Book Search : </b></p>
+			</div>
+			<div style="float: left;padding-left:5px;">
+				<input type="text" name="" style="height:25px;width:190px;border-radius: 4px;">
+			</div>
+			<div style="float: left;">
+				<input type="text" name="" style="height:25px;width:190px;border-radius: 4px;">
+			</div>
+			<div style="float: left;">
+		 		 <input type="submit" name="" value="Search" style="height:31px;width:px;background-color: black;color:white;border:px;border-radius: 8px;">
+			</div>
+	</div>
+
+		<!--this displays books in the library-->
+	<div>
+		{% for x in range(5) %}
+		<div style="border:solid 1px lightgrey;border-bottom:inset 4px lightgrey;border-left:outset 4px lightgrey; height:170px;margin:auto;margin-top:18px;padding-left:20px;padding-right:20px;width:80%;border-radius: 8px;">	
+				<p>	Title</p>
+		</div>
+			{% endfor %}
+	</div>
+
+{% endblock %}

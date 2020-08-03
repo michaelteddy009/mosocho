@@ -18,3 +18,4 @@ logging.info('[+] summing the divisibles')
 totalOfDivisible35 = sum(divisible35)
 
 print("The sum of all multiples of 3 or 5 below " + str(max_value) + " is " + str(totalOfDivisible35))
+

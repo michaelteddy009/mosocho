@@ -1,0 +1,29 @@
+{% extends 'layoutGetIn.html' %}
+{% block content %}
+
+	<!-- this is the main content page -->
+	<div class='container'>
+		<form class="form-signin" method="POST" action="/login">
+			<h2 class="form-signin-heading">Please Sign In</h2>
+			{{ form.hidden_tag() }}
+
+			<div>
+				{{ form.username.label }}
+				{{ form.username }}
+			</div>
+				
+			<div>
+				{{ form.password.label }}
+				{{ form.password }}
+			</div>
+
+			<div>
+				{{ form.remember.label }}
+				{{ form.remember }}
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type='submit'>Log In</button>
+				
+		</form>
+	</div>
+{% endblock %}
+

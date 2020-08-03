@@ -1,0 +1,39 @@
+{% extends 'layoutGetIn.html' %}
+{% block content %}
+
+<div id="loginform" style="width:65%;margin:auto;border-top:outset 4px lightgrey;border-right:inset 4px lightgrey;padding:;margin-top:45px;border-left:outset 4px lightgrey;border-bottom: inset 4px lightgrey;border-radius: 10px;">
+	<form method="POST" action='' >
+			<div style="font-size: 30px;border:none; width:90%;margin:auto;">
+				<b >Admin LogIn</b>
+				<hr>
+			</div>
+			
+			<div id="loginfield" style="padding-top: 20px;width:90%;margin:auto;" >
+				<label style="font-size: 17px"><b>{{ form.username.label() }}:</b></label><br>
+					{{ form.username(style="width:100%;height:25px") }}
+				
+				<!--minute 34 video 3 explains-->
+
+			</div>
+			<div id="loginfield" style="padding-top: 20px;width:90%;margin:auto;" >
+				<label style="font-size: 17px"><b>{{ form.password.label() }}:</b></label><br>
+				{{ form.password(style="width:100%;height:25px") }}
+				
+			</div>
+
+
+			<div style="width:90%;margin:auto;padding-top:20px;">
+				Remember me {{ form.remember() }}
+			</div>
+
+			<div id='loginfield' style="width:90%;margin:auto;width:90%;padding-top: 20px;padding-bottom:20px;">
+				{{ form.submit(style="background-color: black; color:white; width:20%; height: 32px; font-family:aerial;") }}Need an account
+				<a href="{{ url_for('register')}}" style="padding-left: 5px;">Register</a>
+				
+			</div>
+	
+	</form>
+
+</div>
+{% endblock content %}
+
